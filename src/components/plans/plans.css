@@ -1,0 +1,104 @@
+.plans {
+  height: fit-content;
+  width: 90%;
+  margin: auto;
+
+  justify-content: center;
+  display: flex;
+
+  overflow: hidden;
+  flex-direction: row;
+  gap: 20px;
+}
+.plan {
+  padding-bottom: 20px !important;
+}
+.plans_sub_two {
+  /* Can be in percentage also. */
+  height: 100%;
+}
+
+.plans_sub {
+  background-color: white;
+  height: 300px;
+  padding: 20px;
+
+  margin: auto;
+  width: 28%;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 0 20px 0px rgba(194, 105, 105, 0.1);
+
+  align-items: center;
+
+  text-align: center;
+  margin-bottom: 10px !important;
+}
+.plans_sub:hover {
+  box-shadow: 0 0 20px 0px rgba(255, 0, 0, 0.63);
+}
+.plans_sub_two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.plans_sub img {
+  height: 80px;
+}
+.plans_sub h3 {
+  margin-bottom: 10px;
+
+  font-size: 22px;
+}
+.plans_sub h3,
+h3,
+p {
+  line-height: 25px;
+}
+.plans_sub button {
+  padding: 9px;
+  margin-top: 5px;
+  background-color: red;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  width: 80%;
+  border-radius: 7px;
+  color: #fff;
+}
+.plans_sub--disabled button {
+  background-color: gray !important;
+}
+.plans_sub--disabled button:hover {
+  box-shadow: 0 0 1rem 0 gray !important;
+}
+.plans_sub button:hover {
+  box-shadow: 0 0 1rem 0 #ff000d;
+}
+@media (max-width: 950px) {
+  .plans {
+    width: 100%;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .plans_sub {
+    width: 80%;
+    margin-bottom: 5px;
+    height: fit-content;
+  }
+}
+.plan h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.plan {
+  background-image: url(./plan.jpg);
+  margin-bottom: 20px;
+  object-fit: fill;
+}
